@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="text_padding">
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <style name="text_small" parent="text_padding">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:fontFamily">@string/font_family_body</item>
+        <item name="android:textColor">#bb282626</item>
+        <item name="android:textColorHighlight">#66009688</item>
+        <item name="android:textColorLink">#4aaaea</item>
+        <item name="android:textColorHint">#89000000</item>
+    </style>
+
+    <style name="text_more_small" parent="text_padding">
+        <item name="android:textSize">@dimen/text_size_more_small</item>
+        <item name="android:fontFamily">@string/font_family_body</item>
+        <item name="android:textColor">#bb282626</item>
+        <item name="android:textColorHighlight">#66009688</item>
+        <item name="android:textColorLink">#4aaaea</item>
+        <item name="android:textColorHint">#89000000</item>
+    </style>
+
+    <style name="text_medium" parent="text_padding">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily">@string/font_family_body</item>
+        <item name="android:textColor">#cc302e2e</item>
+        <item name="android:textColorHighlight">#66009688</item>
+        <item name="android:textColorLink">#4aaaea</item>
+        <item name="android:textColorHint">#89000000</item>
+    </style>
+
+    <style name="text_large" parent="text_padding">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:fontFamily">@string/font_family_body</item>
+        <item name="android:textColor">#ef121111</item>
+        <item name="android:textColorHighlight">#66009688</item>
+        <item name="android:textColorLink">#4aaaea</item>
+        <item name="android:textColorHint">#89000000</item>
+
+    </style>
+    <style name="edit_box">
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">#ff8b8b8b</item>
+        <item name="android:background">@drawable/editbox_bg</item>
+
+    </style>
+</resources>

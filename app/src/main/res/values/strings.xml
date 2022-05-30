@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">平舆县政府</string>
+    <string name="font_family_body">sans-serif</string>
+    <string name="back">返回</string>
+    <string name="fail_operation">操作失败</string>
+    <string name="requesting">请求中...</string>
+    <string name="success_operation">操作成功</string>
+    <!--权限申请相关-->
+    <string name="open_now">立即开启</string>
+    <string name="no_storage_permission">存储权限不可用</string>
+    <string name="please_open_storage_permission">请在应用设置的权限管理中，允许平舆县政府使用存储权限</string>
+    <string name="permission_get_successful">权限获取成功!</string>
+    <string name="no_camera_permission">相机权限不可用</string>
+    <string name="please_open_camera_permission">请在应用设置的权限管理中，允许平舆县政府使用相机权限</string>
+    <string name="no_audio_permission">录音权限不可用</string>
+    <string name="please_open_audio_permission">请在应用设置的权限管理中，允许平舆县政府使用录音权限</string>
+    <string name="can_not_use_this_operation">没有权限执行此操作!</string>
+    <string name="send_msg">发送验证码</string>
+    <string name="requesting_and_wait">正在请求，请稍后...</string>
+    <string name="something_error">出现未知错误，请重试...</string>
+    <string name="operation_failed">操作失败,请重试...</string>
+</resources>

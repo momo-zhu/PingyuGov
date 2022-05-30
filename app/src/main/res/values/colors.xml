@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--常用色值-->
+    <color name="title_background_color">#cc0d0d</color>
+    <color name="text_gray">#5e5e5e</color>
+    <color name="text_black">#ef121111</color>
+    <color name="divider">#c2bfbf</color>
+    <color name="divider_wide">#f8f9fa</color>
+    <color name="tabLayout_color">#B50B1E</color>
+    <color name="tabLayout_unSel_color">#F8937E</color>
+
+    <!--基本色值-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#eb4f38</color>
+
+    <!--其他-->
+    <color name="checked_default">#0973c1</color>
+    <color name="checked_checked">#1d8bdd</color>
+    <color name="blue_light">#7ccdea</color>
+    <color name="blue_light2">#ff33b5e5</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="blue_dark">#ff0099cc</color>
+    <color name="purple">#ffaa66cc</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="list_background">#60eeeeee</color>
+    <color name="text_hint">#c2bfbf</color>
+    <color name="text_button_def">#d9d9d9</color>
+    <color name="text_button_pres">#c2bfbf</color>
+    <color name="txt_medium">#cc302e2e</color>
+    <color name="wide_divider">#f7f7f7</color>
+
+    <color name="dark_red">#720011</color>
+    <color name="red_sel">#ed2c10</color>
+    <color name="red_light1">#ec9d8d</color>
+    <color name="red_light1_sel">#f16549</color>
+    <color name="red_light2">#fbccc3</color>
+    <color name="red_light2_sel">#fd8a74</color>
+    <color name="red_light">#ecc0bb</color>
+    <color name="text_more_small">#bb282626</color>
+
+    <!--界面色块-->
+    <color name="grid_yellow_def">#ecd800</color>
+    <color name="grid_yellow_sel">#c3b304</color>
+    <color name="grid_yellow2_def">#aae31a</color>
+    <color name="grid_yellow2_sel">#99ca1b</color>
+    <color name="grid_green3_def">#61c0bb</color>
+    <color name="grid_green3_sel">#53a19d</color>
+    <color name="grid_green_def">#23ccaa</color>
+    <color name="grid_green_sel">#21b295</color>
+    <color name="grid_blue2_def">#39c052</color>
+    <color name="grid_blue2_sel">#30a345</color>
+    <color name="grid_green2_def">#24ac26</color>
+    <color name="grid_green2_sel">#229624</color>
+    <color name="grid_blue_def">#2a9be6</color>
+    <color name="grid_blue_sel">#2786c5</color>
+    <color name="grid_pink2_def">#498cff</color>
+    <color name="grid_pink2_sel">#437ddf</color>
+    <color name="grid_pink_def">#6163e9</color>
+    <color name="grid_pink_sel">#5a5cd0</color>
+</resources>

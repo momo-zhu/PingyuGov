@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_back"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:id="@+id/title_back"
+                android:layout_toRightOf="@+id/image_back"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/title_background_color"
+                android:textSize="@dimen/title_text" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="搜索"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/selector_editbox_round_divider"
+            android:layout_toRightOf="@id/rl_back"
+            android:layout_toLeftOf="@id/search"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/labelSearch"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_search_gray"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:id="@+id/keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/labelSearch"
+                android:layout_centerVertical="true"
+                android:textColorHint="#cdcdcd"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="请输入关键字"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/wide_divider"
+        android:background="@color/wide_divider"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:dividerHeight="5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_error_pic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="在北京会见全国先进个体工商户代表并作重要讲话"
+            android:textColor="#ff323232"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingRight="4dp"
+            android:textSize="16dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="李克强在北京会见全国先进个体工商户代表并作重要讲话..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12sp"
+            android:textIsSelectable="false"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#ffa2a2a2" />
+
+    </LinearLayout>
+</LinearLayout>

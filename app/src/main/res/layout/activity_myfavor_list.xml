@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_main_title"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/wide_divider"
+        android:background="@color/wide_divider"
+        android:dividerHeight="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true" />
+    <RelativeLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_no_more_data"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="您还没有添加收藏哦"
+            android:textSize="14sp"
+            android:textColor="#898686" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

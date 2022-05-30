@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_large"
+        android:gravity="center_horizontal"
+        android:text="请输入发言内容"
+        android:textColor="@color/title_background_color"/>
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbox_bg"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:minLines="4"
+        android:hint="发言内容"
+        android:gravity="top"
+        android:textColorHint="@color/text_hint"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

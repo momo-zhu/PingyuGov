@@ -1,0 +1,11 @@
+include ':app',
+        ':circleimageview',
+        ':DynamicBox',
+        ':FlycoTabLayout_Lib',
+        ':infiniteviewpager',
+        ':kjframe',
+        ':pullToRefresh',
+        ':sweetDialog',
+        ':alertview',
+        ':slidingmenu'
+

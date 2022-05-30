@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_main_title"/>
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="殡葬惠民政策解读"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_layout"
+        android:maxLines="2"
+        android:minLines="2"
+        style="@style/text_large"/>
+    <com.zanlabs.widget.infiniteviewpager.InfiniteViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/subject"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/waiting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/waiting_frame"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

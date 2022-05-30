@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include android:id="@+id/title"
+        layout="@layout/layout_main_title"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tabLayout_color"
+        android:layout_below="@+id/title"
+        />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_below="@id/view">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/divider"
+                android:scrollbars="none"
+                android:scrollbarStyle="outsideOverlay"
+                android:background="#ffffff" />
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/waiting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:src="@drawable/waiting_frame"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/Exception"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/view"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_no_more_data"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="暂时没有数据"
+            android:textSize="14sp"
+            android:textColor="#898686" />
+
+    </RelativeLayout>
+</RelativeLayout>

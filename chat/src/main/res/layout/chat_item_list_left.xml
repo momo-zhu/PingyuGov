@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+
+    <TextView
+        android:id="@+id/chat_item_date"
+        style="@style/chat_item_date"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_item_avatar"
+            style="@style/chat_item_avatar"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false" />
+
+        <TextView
+            android:id="@+id/chat_item_name"
+            style="@style/chat_item_name"
+            android:layout_toRightOf="@+id/chat_item_avatar"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/chat_item_layout_content"
+            style="@style/chat_item_content"
+            android:layout_below="@+id/chat_item_name"
+            android:layout_toRightOf="@id/chat_item_avatar"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_from_bg_selector">
+
+            <TextView
+                android:id="@+id/chat_item_content_text"
+                style="@style/chat_item_text_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/fileIcon" />
+
+            <ImageView
+                android:id="@+id/chat_item_content_image"
+                style="@style/chat_item_image_content" />
+
+            <ImageView
+                android:id="@+id/chat_item_audio"
+                style="@style/chat_item_sound"
+                android:layout_gravity="center_vertical|left"
+                android:scaleType="fitStart"
+                android:src="@drawable/adj_left"
+                 />
+
+            <ImageView
+                style="@style/chat_item_file"
+                android:id="@+id/fileIcon"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chat_item_audio_length"
+            style="@style/chat_item_audio_length"
+            android:layout_alignTop="@+id/chat_item_layout_content"
+            android:layout_toRightOf="@+id/chat_item_layout_content" />
+
+        <ImageView
+            android:id="@+id/chat_item_fail"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/msg_state_fail_resend"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/chat_item_audio_length" />
+
+        <ProgressBar
+            android:id="@+id/chat_item_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chat_item_audio_length"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.meetfine.pingyugov">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.access_network_state" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".application.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.meetfine.pingyugov.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EasySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegisterActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AttractInvestmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PicPingYuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GovPicNewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EnjoyPYListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EnjoyPYListActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyFavorListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ServiceTempListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ServiceItemDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InterLetterDetailActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InterLetterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SolicitationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReplysDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InterOnlineDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InterOnlinePicDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DepartmentGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DepartmentListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.BBSDetailActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

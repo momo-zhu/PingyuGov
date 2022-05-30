@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wide_divider">
+    <include layout="@layout/layout_main_title"/>
+    <RelativeLayout
+        android:id="@+id/cleanUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_pressed_white"
+        android:clickable="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="清空缓存"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/mm"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/mm_submenu_normal_small"
+            android:layout_marginRight="-5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/clean_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/mm"
+            android:text="当前版本"
+            android:textColor="@color/gray_btn_bg_pressed_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_pressed_white"
+        android:clickable="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="检查新版本"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/point"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/red_point"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/currentVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="当前版本为1.0"
+            android:textColor="@color/gray_btn_bg_pressed_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

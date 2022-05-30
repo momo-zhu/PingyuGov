@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_error_pic" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="8dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_delete" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/thumb"
+        android:layout_alignTop="@id/thumb"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="4dp"
+            android:text="王琦赴金寨县燕子河镇张畈村调研扶贫开发工作"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff323232"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/createDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:maxLines="2"
+            android:paddingTop="4dp"
+            android:text="2017-1-7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffa2a2a2"
+            android:textIsSelectable="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</RelativeLayout>
